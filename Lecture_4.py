@@ -1,0 +1,52 @@
+## break statment
+## Example 
+mysum=0
+for i in range(5,11,2):
+    mysum +=i
+    if mysum ==5:
+        break
+    mysum += 1
+print(mysum)
+
+## Find number of even number in the range of 5
+even_num=0
+for i in range(5):
+    if i%2==0:   ## Here it means "remainder is 0"
+        even_num+=1
+print(even_num)
+
+## Check whelther i or u is present 
+## All the codes are same 
+
+#s = "demo loops - fruit loops"
+#if index in range(len(s)):
+#    if s[index]=='i' or s[index]=='u':
+#        print("There is an i or u.")
+
+## Robot Cheerleaders 
+an_letters="aefhilmnorsxAEFHILMNORSX"
+word=input("I will cheer for you. Enter a word: ")
+times=int(input("Level: "))
+
+for w in word:
+    if w in an_letters:
+        print("Give me an" + w + ":" + w)
+    else :
+        print("Give me a" + w + ":" + w)
+print ("What does it spell?")
+for i in range(times):
+    print(word,"!!!")
+
+## Assume you are given a string of lowercase letters in variable s. Count how many unique letters are there in the strings.
+## For example s='abca'
+## Output should be 3
+s='abca'
+seen=''
+count=0
+for char in s:
+    if char not in seen:
+        seen = seen + char
+        count += 1              ## We can use len() other than count
+print(count)
+
+## Hi 
