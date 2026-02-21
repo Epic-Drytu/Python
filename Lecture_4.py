@@ -49,4 +49,17 @@ for char in s:
         count += 1              ## We can use len() other than count
 print(count)
 
-## Hi 
+## Square Root Finder with while loop
+guess = 0 
+neg_value=False
+x = int(input("Enter an integer: ")) 
+if x<0:
+    neg_value=True
+while guess**2<x:
+    guess = guess + 1
+if guess**2 ==x:
+    print("The square root of", x, "is",guess)
+else:
+    print(x, "does not have a square root")
+    if neg_value:
+        print("Just checking... Did you mean",-x,"?")
