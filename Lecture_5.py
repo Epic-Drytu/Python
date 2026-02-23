@@ -20,3 +20,30 @@ for i in range(p-len(result)):
 result=result[0:-p]+'.'+result[-p:]
 
 print('The binary represntation of binary decimel'+str(x)+'is'+str(result))
+
+#Normal case
+x=0
+for i in range(10):
+    x+=0.234
+print(x == 2.34)                   #True
+
+#Special 0.1 case
+x=0
+for i in range(10):
+    x+=0.1
+print(x == 0.1)                   #False
+print(x,'==',10*0.1)
+
+#Approximation Implementation
+x=100
+epilson=0.01
+num_guess=0
+guess=0.0
+increment=0.0001
+while abs(guess**2 - x) >= epilson:
+    guess+= increment
+    num_guess+=1
+print('Number of guesses', num_guess)
+print(guess,'is close to square root of',x)
+
+#
