@@ -46,4 +46,18 @@ while abs(guess**2 - x) >= epilson:
 print('Number of guesses', num_guess)
 print(guess,'is close to square root of',x)
 
-#
+#Approxiamtion method to find the 'Close Enough' sqaure root
+x=54321
+epilson=0.01
+num_guesses=0
+guess=0
+increment=0.0001
+while abs(guess**2 -x)>= epilson and guess**2<= x:
+    guess += increment 
+    num_guesses+=1
+print("Number of guess are",num_guesses)
+if abs(guess**2-x )>=epilson:
+    print("Failed on the sqaure root of",x)
+else:
+    print(guess,"is clsoe enough to",x)
+        
