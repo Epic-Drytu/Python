@@ -103,7 +103,7 @@ for alyssa in range(11):
                 print(f'Cindy sold {cindy} tickets ')
             
  #For efficient
- for alyssa in range(1001):
+for alyssa in range(1001):
     ben = max(alyssa-20,0)
     cindy = alyssa *2
     if alyssa + ben + cindy == 1000:
