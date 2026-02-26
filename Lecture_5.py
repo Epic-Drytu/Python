@@ -56,8 +56,10 @@ while abs(guess**2 -x)>= epilson and guess**2<= x:
     guess += increment 
     num_guesses+=1
 print("Number of guess are",num_guesses)
-if abs(guess**2-x )>=epilson:
+if abs(guess**2-x )>=epilson:                          #exited the loop because guesses are unreasonable
     print("Failed on the sqaure root of",x)
-else:
+    print("Last guess was",guess)
+    print("Last guess squared was",guess*guess)
+else:                                                  #exited the loop because the guess**2 got close enough to x
     print(guess,"is clsoe enough to",x)
-        
+
