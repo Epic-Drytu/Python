@@ -18,3 +18,14 @@ def div_by(n,d):
         return False
     
 print(div_by(195,13))
+
+#Add all the odd numbers  
+def sum_odd(a,b):
+    sum_of_odd=0
+    i=a
+    while i<=b:
+        if i%2==1:
+            sum_of_odd+=i
+        i+=1
+    return sum_of_odd
+print(sum_odd(2,4))
