@@ -22,4 +22,20 @@ def is_triangular(n):
         if total ==n:
             return True
     return False
-print(is_triangular(1))            
+print(is_triangular(1))         
+
+#Using functions to find square roots 
+def bisection_root(x):
+    low=0
+    high=x
+    epsilon=0.01
+    ans=(high+low)/2
+    while abs(ans**2 -x)>= epsilon:
+        if ans**2 < x:
+            low=ans
+        else: 
+            high = ans
+        ans=(high+low)/2
+    return ans
+print(bisection_root(16))
+print(bisection_root(123))
