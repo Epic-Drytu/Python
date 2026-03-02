@@ -39,3 +39,14 @@ def bisection_root(x):
     return ans
 print(bisection_root(16))
 print(bisection_root(123))
+
+#
+def count_nums_with_sqrt_close_to(n,epsilon):
+    count=0
+    for i in range(n**3):
+        #Take the square root of i
+        sqrt=bisection_root(i)
+        if abs(n-sqrt)<epsilon:
+            count+=1
+    return count
+print(count_nums_with_sqrt_close_to(10,0.1))
