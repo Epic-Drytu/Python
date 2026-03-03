@@ -50,3 +50,17 @@ def count_nums_with_sqrt_close_to(n,epsilon):
             count+=1
     return count
 print(count_nums_with_sqrt_close_to(10,0.1))
+
+# Example 
+def apply(criteria,n):
+    count=0
+    for i in range (n+1):
+        
+        if criteria(i):
+            count+=1
+    return count
+def is_even(x):
+    return x%2==0
+        
+how_many= apply(is_even,10)
+print(how_many)
