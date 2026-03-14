@@ -29,4 +29,3 @@ def char_counts(s):
             v+=1
     return(c,v)
 print(char_counts("abcd"))
-
